@@ -80,6 +80,8 @@ body {
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar-caption-wrap .navbar-caption:hover {
@@ -96,6 +98,7 @@ body {
   margin: 0 0.3rem;
   position: relative;
   overflow: hidden;
+  z-index: 10;
 }
 
 .navbar-nav .nav-link::before {
@@ -204,6 +207,8 @@ body {
   text-align: center;
   color: white;
   backdrop-filter: blur(5px);
+  opacity: 1;
+  visibility: visible;
 }
 
 .carousel-caption h5 {
@@ -214,6 +219,7 @@ body {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   letter-spacing: 0.5px;
   animation: fadeInUp 0.8s ease;
+  display: block;
 }
 
 .carousel-caption p {
@@ -222,6 +228,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: 500;
   animation: fadeInUp 0.8s ease 0.2s backwards;
+  display: block;
 }
 
 .carousel-indicators {
@@ -653,7 +660,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .card-box::before {
@@ -696,15 +703,20 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
   font-style: italic;
+  margin-bottom: 1.5rem;
+  visibility: visible;
+  opacity: 1;
 }
 
 .card-text {
   color: var(--accent-color);
   font-weight: 700;
   font-size: 1rem;
-  margin-top: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  visibility: visible;
+  opacity: 1;
+  margin-top: auto;
 }
 
 /* ===== FORM / CONTACT ===== */
